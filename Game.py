@@ -7,7 +7,7 @@ class RPS(Enum):
     PAPER=2
     SCISSOR=3
 
-#Nama input kudukuratuku 
+#Enter your choice 
 
 print(" ")
 playerchoice=input("Enter....\n\n 1 for Rock \n 2 for Paper \n 3 for Scissor \n \n ")
@@ -18,14 +18,14 @@ playerchoice=input("Enter....\n\n 1 for Rock \n 2 for Paper \n 3 for Scissor \n 
 player=int(playerchoice) 
 
 if player<1 or player>3:
-    sys.exit("MENTAL PUNDA  \n ONLY ENTER 1 ,2 or 3")
+    sys.exit("TRY AGAIN \n ONLY ENTER 1 ,2 or 3")
     
-#Computer input kudukuratuku
+#Enter computer choice
 
 computerchoice=random.choice("123")
 computer=int(computerchoice)
 
-#Output Screen ahkuratuku
+#Display output in screen
 
 print(" ")
 print("You Choose" +" "+str (RPS(player)).replace('RPS.','') + ".")
